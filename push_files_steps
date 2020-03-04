@@ -1,0 +1,11 @@
+Steps to push local files to GitHub:
+1. Initialize the  repository: git init
+2. Add files to local repository: 
+    git add <file1>, git add <file2>, git add <file3> ...
+	git commit -m <message>
+3. Use "git status" to check the status of repository
+4. Create the SSH key for your GitHub account:    $ ssh-keygen -t rsa -C "your email",
+   then add the key to GitHub account(you can search the way through Net)
+5. Create the link between local repository and GitHub repository: $ git remote add origin git@server-name:path/repo-name.git
+6. $ git push -u origin master
+7. if ... failed to push some refs to git,use this:  $ git pull --rebase origin master
